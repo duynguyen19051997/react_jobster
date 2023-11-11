@@ -3,7 +3,7 @@ import classes from "../assets/css/Navbar.module.css";
 import { BsList } from "react-icons/bs";
 import { useSelector } from "react-redux";
 import { BiLogOutCircle } from "react-icons/bi";
-import { clearStore, logoutUser } from "../features/user/userSlice";
+import { clearStore } from "../features/user/userSlice";
 import { useDispatch } from "react-redux";
 
 export const Navbar = ({ onShowSidebar }) => {

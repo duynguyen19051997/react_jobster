@@ -11,7 +11,6 @@ import {
   updateJob,
 } from "../../features/job/jobSlice";
 import { getUserFromLocalStorage } from "../../utils/localStorage";
-import { showStats } from "../../features/allJobs/allJobsSlice";
 
 export const AddJob = (props) => {
   const {
