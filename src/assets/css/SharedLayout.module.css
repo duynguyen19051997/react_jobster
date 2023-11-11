@@ -1,0 +1,15 @@
+@import "../../assets/css/global.css";
+
+.dashboard_container {
+  width: 100%;
+  display: flex;
+}
+
+.content_container {
+  width: 100%;
+}
+
+.content {
+  width: var(--width-percent-95);
+  margin: var(--size-rem-2) auto;
+}

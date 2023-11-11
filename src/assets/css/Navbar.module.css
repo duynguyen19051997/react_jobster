@@ -1,0 +1,64 @@
+@import "./global.css";
+
+.navbar_container {
+  width: 100%;
+  height: var(--size-rem-5);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: var(--width-percent-10) var(--width-percent-70) var(
+      --width-percent-10
+    );
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-color: var(--color-white);
+}
+
+.icon {
+  font-size: var(--size-rem-3);
+  color: var(--color-primary-500);
+  cursor: pointer;
+}
+
+h1 {
+  text-transform: capitalize;
+  letter-spacing: var(--letter-spacing-18);
+  font-weight: var(--font-weight-500);
+  color: var(--color-grey-800);
+}
+
+.dropdown {
+  overflow: hidden;
+}
+
+.btn_logout {
+  background-color: var(--color-primary-500);
+  color: var(--color-white);
+  font-size: var(--font-size-small);
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.show_dropdown_content {
+  display: block;
+}
+
+@media screen and (max-width: 1500px) {
+  .navbar_container {
+    grid-template-columns: var(--width-percent-10) 65% 15%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .navbar_container {
+    grid-template-columns: var(--width-percent-10) var(--width-percent-60) var(
+        --width-percent-20
+      );
+  }
+}

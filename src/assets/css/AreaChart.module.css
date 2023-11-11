@@ -1,0 +1,26 @@
+@import "./global.css";
+
+.area_chart_container {
+  width: var(--chart-width-heigh-1000);
+  height: var(--chart-width-heigh-500);
+  margin: 0 auto;
+}
+
+.area_chart_container .area_chart {
+  width: auto;
+  height: auto;
+}
+
+@media screen and (max-width: 1500px) {
+  .area_chart_container {
+    width: var(--chart-width-heigh-600);
+    height: var(--chart-width-heigh-300);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .area_chart_container {
+    width: var(--chart-width-heigh-600);
+    height: var(--chart-width-heigh-300);
+  }
+}

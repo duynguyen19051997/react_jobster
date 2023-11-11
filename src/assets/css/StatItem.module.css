@@ -1,0 +1,76 @@
+@import "./global.css";
+
+.stats_item {
+  padding: 2rem;
+  background-color: var(--color-white);
+  border-radius: var(--size-rem-0-2-5);
+  box-shadow: var(--shadow-1);
+}
+
+.stats_item header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.count {
+  font-weight: var(--font-weight-700);
+  font-size: 50px;
+  letter-spacing: var(--letter-spacing-18);
+}
+
+.icon {
+  width: 70px;
+  height: 60px;
+  background: rgb(252, 239, 199);
+  border-radius: var(--borderRadius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pending_bg {
+  background-color: rgb(252, 239, 199);
+}
+
+.pending_color {
+  color: rgb(233, 185, 73);
+}
+
+.pending_border {
+  border-bottom: 5px solid rgb(233, 185, 73);
+}
+
+.interview_bg {
+  background-color: rgb(224, 232, 249);
+}
+
+.interview_color {
+  color: rgb(100, 122, 203);
+}
+
+.interview_border {
+  border-bottom: 5px solid rgb(100, 122, 203);
+}
+
+.declined_bg {
+  background-color: rgb(255, 238, 238);
+}
+
+.declined_color {
+  color: rgb(214, 106, 106);
+}
+
+.declined_border {
+  border-bottom: 5px solid rgb(214, 106, 106);
+}
+
+.stats_item h3 {
+  letter-spacing: var(--letter-spacing-18);
+  margin: var(--size-rem-0-5) 0px 0px;
+  text-transform: capitalize;
+  text-align: left;
+  font-weight: var(--font-weight-600);
+  color: var(--color-grey-800);
+}

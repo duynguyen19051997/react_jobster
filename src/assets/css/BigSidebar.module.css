@@ -1,0 +1,16 @@
+@import "./global.css";
+
+.big_aside_container {
+  display: block;
+  min-height: 100vh;
+  height: 100%;
+  background-color: var(--color-white);
+  /* padding: var(--size-rem-1); */
+  box-shadow: var(--shadow-2);
+}
+
+@media screen and (max-width: 1100px) {
+  .big_aside_container {
+    display: none;
+  }
+}

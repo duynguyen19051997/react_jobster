@@ -1,0 +1,42 @@
+@import "./global.css";
+
+.confirm_container {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.confirm_none {
+  display: none;
+}
+
+.confirm_main {
+  position: fixed;
+  background: var(--color-white);
+  width: 350px;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: var(--size-rem-0-5);
+}
+
+.display-block {
+  display: block;
+}
+
+.actions_container {
+  float: right;
+  margin-top: var(--size-rem-2);
+  margin-right: var(--size-rem-1);
+}
+
+.btn_confirm {
+  margin-right: var(--size-rem-0-5);
+  background-color: var(--color-primary-500);
+  color: var(--color-white);
+}

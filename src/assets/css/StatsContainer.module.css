@@ -1,0 +1,22 @@
+@import "./global.css";
+
+.stats_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: var(--width-percent-32) var(--width-percent-32) var(
+      --width-percent-32
+    );
+  column-gap: var(--width-percent-2);
+  row-gap: var(--width-percent-2);
+  align-items: center;
+}
+
+.size {
+  font-size: var(--size-rem-2);
+}
+
+@media screen and (max-width: 1100px) {
+  .stats_container {
+    grid-template-columns: var(--width-percent-48) var(--width-percent-48);
+  }
+}

@@ -1,0 +1,129 @@
+@import "./global.css";
+
+.job_container {
+  width: 100%;
+  background-color: var(--color-white);
+  border-radius: var(--size-rem-0-2-5);
+}
+
+.job_title {
+  width: var(--width-percent-95);
+  margin: 0 auto;
+  margin-bottom: var(--size-rem-1);
+  border-bottom: 1px solid var(--color-grey-200);
+  padding: var(--size-rem-1) 0;
+  display: grid;
+  grid-template-columns: var(--width-percent-15) var(--width-percent-80);
+  column-gap: var(--width-percent-5);
+}
+
+.job_title_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary-500);
+  color: var(--color-white);
+  border-radius: var(--size-rem-0-2-5);
+  padding: var(--size-rem-0-5);
+  text-transform: capitalize;
+}
+
+.job_title_icon span {
+  font-size: var(--size-rem-2);
+}
+
+.job_title_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.job_title_info h3 {
+  text-transform: capitalize;
+  letter-spacing: var(--letter-spacing-18);
+  font-weight: var(--font-weight-500);
+  color: var(--color-grey-800);
+}
+
+.job_title_info p {
+  letter-spacing: var(--letter-spacing-15);
+  font-weight: var(--font-weight-500);
+  color: var(--color-grey-400);
+}
+
+.job_detail {
+  width: var(--width-percent-95);
+  margin: var(--size-rem-1) auto;
+  display: grid;
+  grid-template-columns: var(--width-percent-50) var(--width-percent-50);
+}
+
+.job_detail_attr {
+  display: flex;
+  align-content: space-between;
+  width: 100%;
+  margin: var(--size-rem-0-5) auto;
+}
+
+.job_detail_attr p {
+  letter-spacing: var(--letter-spacing-15);
+  color: var(--color-grey-400);
+}
+
+.icon {
+  width: 50px;
+  color: var(--color-grey-600);
+}
+
+.job_detail_attr_status {
+  width: var(--width-percent-50);
+  margin-left: var(--size-rem-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--size-rem-0-2-5);
+}
+
+.job_detail_attr_status p {
+  letter-spacing: var(--letter-spacing-15);
+}
+
+.declined {
+  color: rgb(214, 106, 106);
+  background: rgb(255, 238, 238);
+}
+
+.interview {
+  background: rgb(224, 232, 249);
+  color: rgb(100, 122, 203);
+}
+
+.pending {
+  background: rgb(252, 239, 199);
+  color: rgb(233, 185, 73);
+}
+
+.job_actions {
+  width: var(--width-percent-95);
+  margin: var(--size-rem-1) auto;
+  display: flex;
+  justify-content: left;
+}
+
+.edit_btn {
+  margin-right: var(--size-rem-1);
+  background-color: var(--color-green-light);
+  color: var(--color-green-dark);
+}
+
+.remove_btn {
+  margin-right: var(--size-rem-1);
+  background-color: var(--color-red-light);
+  color: var(--color-red-dark);
+}
+
+@media screen and (max-width: 1100px) {
+  .job_container {
+    margin-bottom: var(--size-rem-1);
+  }
+}

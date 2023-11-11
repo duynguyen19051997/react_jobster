@@ -1,0 +1,18 @@
+@import "./global.css";
+
+.charts_container {
+  padding: var(--size-rem-1) var(--size-rem-0-5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.charts_container h3 {
+  letter-spacing: var(--letter-spacing-18);
+  font-weight: var(--font-weight-700);
+}
+
+.btn_change_chart {
+  margin: var(--size-rem-1) 0;
+}

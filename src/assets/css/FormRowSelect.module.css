@@ -1,0 +1,27 @@
+@import "./global.css";
+
+.form_control {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: var(--size-rem-0-7-5) auto;
+  letter-spacing: var(--letter-spacing-15);
+  background-color: var(--color-white);
+}
+
+.form_control label {
+  text-transform: capitalize;
+  margin-bottom: var(--size-rem-0-7-5);
+  background-color: var(--color-white);
+  font-size: var(--font-size-small);
+}
+
+.form_control select {
+  font-size: var(--font-size-small);
+  background: var(--background-color-input);
+  border: 1px solid var(--color-grey-200);
+  border-radius: var(--size-rem-0-2-5);
+  padding: var(--size-rem-0-5);
+  letter-spacing: var(--letter-spacing-15);
+}

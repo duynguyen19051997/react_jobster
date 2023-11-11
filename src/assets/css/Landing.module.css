@@ -1,0 +1,71 @@
+@import "./global.css";
+
+.main_container {
+  width: var(--width-percent-60);
+  margin: var(--size-rem-2) auto;
+}
+
+.main_center {
+  width: 100%;
+  margin: 5rem 0;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.main_contents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.main_contents h1 {
+  text-transform: capitalize;
+  letter-spacing: var(--letter-spacing-18);
+  margin: var(--size-rem-1) 0;
+}
+
+.main_contents span {
+  color: var(--color-primary-500);
+}
+
+.main_contents p {
+  letter-spacing: var(--letter-spacing-15);
+  line-height: var(--line-height-175);
+  color: var(--color-grey-600);
+  margin: var(--size-rem-1) 0;
+}
+
+.btn_login {
+  letter-spacing: var(--letter-spacing-15);
+  background-color: var(--color-primary-500);
+  color: var(--color-white);
+}
+
+.main_images {
+  width: 100%;
+}
+
+@media screen and (max-width: 1500px) {
+  .main_container {
+    width: var(--width-percent-80);
+    margin: var(--size-rem-2) auto;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .main_container {
+    width: var(--width-percent-70);
+    margin: var(--size-rem-2) auto;
+  }
+
+  .main_center {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main_contents {
+    margin-bottom: var(--size-rem-2);
+  }
+}

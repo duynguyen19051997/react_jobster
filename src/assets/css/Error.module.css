@@ -1,0 +1,28 @@
+@import "./global.css";
+
+.error_container {
+  width: var(--width-percent-60);
+  margin: var(--size-rem-2) auto;
+  text-align: center;
+}
+
+.error_container img {
+  width: var(--width-percent-60);
+}
+
+.error_container h2 {
+  margin-top: var(--size-rem-2);
+  letter-spacing: var(--letter-spacing-18);
+}
+
+.error_container p {
+  margin-top: var(--size-rem-1);
+  letter-spacing: var(--letter-spacing-15);
+}
+
+.btn_error {
+  background-color: var(--color-primary-500);
+  color: var(--color-white);
+  margin-top: var(--size-rem-2);
+  letter-spacing: var(--letter-spacing-15);
+}

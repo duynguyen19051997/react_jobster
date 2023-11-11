@@ -1,0 +1,39 @@
+@import "./global.css";
+
+.menu {
+  margin-top: var(--size-rem-3);
+  width: 100%;
+}
+
+.menu li {
+  padding: var(--size-rem-0-5) var(--size-rem-0-7-5);
+  display: flex;
+  align-items: center;
+  letter-spacing: var(--letter-spacing-15);
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.menu li:hover {
+  background-color: var(--color-grey-100);
+  color: var(--color-primary-600);
+  padding-left: var(--size-rem-2);
+}
+
+.icon_menu {
+  margin-right: var(--size-rem-1);
+  font-size: var(--size-rem-2);
+}
+
+.active {
+  background-color: var(--color-grey-100);
+  color: var(--color-primary-600);
+}
+
+@media screen and (max-width: 1100px) {
+  .menu {
+    width: var(--width-percent-40);
+    margin: 0 auto;
+    margin-top: var(--size-rem-3);
+  }
+}
