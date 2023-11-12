@@ -96,6 +96,7 @@ export const Job = ({
           }}
           message="Do you want to remove this job?"
         />
+        {/* Popup edit */}
         <EditJob
           isShow={isOpenEdit}
           onClose={() => {
