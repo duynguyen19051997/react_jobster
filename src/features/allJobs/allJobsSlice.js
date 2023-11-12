@@ -26,7 +26,6 @@ const initialAllJobs = {
 export const showStats = createAsyncThunk(
   "allJobs/showStats",
   async (_, thunkAPI) => {
-    console.log(thunkAPI);
     return showStatsThunk("/jobs/stats", thunkAPI);
   }
 );
