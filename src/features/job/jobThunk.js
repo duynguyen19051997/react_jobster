@@ -14,14 +14,11 @@ export const createJobThunk = async (url, job, thunkAPI) => {
 };
 
 export const updateJobThunk = async (url, job, thunkAPI) => {
-  thunkAPI.dispatch(showLoading());
   try {
     const resp = await customFetch.patch(url, job, authHeader(thunkAPI));
-    thunkAPI.dispatch(hideLoading());
     thunkAPI.dispatch(clearValues());
     return resp.data;
   } catch (error) {
-    thunkAPI.dispatch(hideLoading());
     return checkForUnauthorizedResponse(error, thunkAPI);
   }
 };

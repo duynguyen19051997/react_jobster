@@ -18,6 +18,7 @@ import { ChartsContainer } from "./ChartsContainer";
 import { AreaChart } from "./AreaChart";
 import { BarChart } from "./BarChart";
 import { PageBtnContainer } from "./PageBtnContainer";
+import { EditJob } from "./EditJob";
 
 export {
   Logo,
@@ -40,4 +41,5 @@ export {
   AreaChart,
   BarChart,
   PageBtnContainer,
+  EditJob,
 };

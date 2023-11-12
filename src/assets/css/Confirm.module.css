@@ -30,7 +30,8 @@
 }
 
 .actions_container {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
   margin-top: var(--size-rem-2);
   margin-right: var(--size-rem-1);
 }
